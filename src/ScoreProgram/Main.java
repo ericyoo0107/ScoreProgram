@@ -46,12 +46,27 @@ public class Main {
         scoreProcess(student4, math, 95);
         scoreProcess(student5, math, 56);
 
+        ScoreTable koreanTable = new ScoreTable(korean);
+        ScoreTable mathTable = new ScoreTable(math);
 
+        koreanTable.ShowTable();
+        System.out.println();
+        mathTable.ShowTable();
     }
     public static void  scoreProcess(Student student, Subject subject, int score)
     {
-        Score score_stu = new Score(student,subject,score);
-        student.addScore(score_stu);
+        if(subject instanceof Korean)
+        {
+            Korean korean = (Korean)subject;
+            Score score_stu = new Score(student,subject,score);
+            student.addScore(korean.getClassID(),score_stu);
+        }
+        else if(subject instanceof Math)
+        {
+            Math math = (Math)subject;
+            Score score_stu = new Score(student,subject,score);
+            student.addScore(math.getClassID(),score_stu);
+        }
     }
 }
 //classID 활용방안

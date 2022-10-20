@@ -1,12 +1,14 @@
 package ScoreProgram;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Objects;
 
 public class Student {
     private String StudentName;
     private String StudentNum;
     private String major;
-    private ArrayList<Score> myScore = new ArrayList<Score>();
+    private HashMap<Integer,Score> myScore = new HashMap<Integer,Score>();
 
     public Student(String studentName, String studentNum, String major) {
         StudentName = studentName;
@@ -18,8 +20,24 @@ public class Student {
         return major;
     }
 
-    public void addScore(Score myScore)
+    public void addScore(int SubjectCode, Score myScore)
     {
-        this.myScore.add(myScore);
+        this.myScore.put(SubjectCode,myScore);
+    }
+
+    public String whatsMainSubject(String major)
+    {
+        if(major.equals("컴퓨터공학과")) return "수학";
+        else if(major.equals("국어국문학과")) return "국어";
+        return major;
+    }
+
+    public String showSubjectScore(int subjectCode)
+    {
+        return StudentName + "|" + StudentNum + "|" + whatsMainSubject(this.major) + "|" + myScore.get(subjectCode);
+    }
+    @Override
+    public String toString() {
+        return StudentName + "|" + StudentNum + "|" + whatsMainSubject(this.major) + "|" + myScore;
     }
 }

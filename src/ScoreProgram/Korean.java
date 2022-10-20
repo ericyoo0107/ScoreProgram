@@ -1,6 +1,7 @@
 package ScoreProgram;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Korean implements Subject{
     private int classID;
@@ -13,5 +14,18 @@ public class Korean implements Subject{
     @Override
     public void sugangAdmit(Student student) {
         this.student.add(student);
+    }
+
+    public ArrayList<Student> getStudent() {
+        return student;
+    }
+
+    public int getClassID() {
+        return classID;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(classID);
     }
 }
