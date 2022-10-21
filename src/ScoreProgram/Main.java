@@ -2,7 +2,7 @@ package ScoreProgram;
 
 public class Main {
 	public static void main(String[] args) {
-		School InhaUniv = new School();
+		School InhaUniv = School.getInstance();
 
 		Student student1 = new Student("준혁", "12201914", "국어국문학과");
 		Student student2 = new Student("승우", "12201532", "컴퓨터공학과");
@@ -39,8 +39,6 @@ public class Main {
 		mediaDance.sugangAdmit(student1);
 		mediaDance.sugangAdmit(student2);
 		mediaDance.sugangAdmit(student3);
-		mediaDance.sugangAdmit(student4);
-		mediaDance.sugangAdmit(student5);
 
 		scoreProcess(student1, korean, 95);
 		scoreProcess(student2, korean, 95);
@@ -57,8 +55,6 @@ public class Main {
 		scoreProcess(student1, mediaDance, 60);
 		scoreProcess(student2, mediaDance, 70);
 		scoreProcess(student3, mediaDance, 70);
-		scoreProcess(student4, mediaDance, 100);
-		scoreProcess(student5, mediaDance, 55);
 
 		ScoreTable koreanTable = new ScoreTable(korean);
 		ScoreTable mathTable = new ScoreTable(math);
