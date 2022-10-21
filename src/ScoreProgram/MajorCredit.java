@@ -1,5 +1,5 @@
 package ScoreProgram;
 
-public interface MajorCredit extends Makecredit {
+public interface MajorCredit extends MakeCredit {
 	public char majorCredit(int score);
 }

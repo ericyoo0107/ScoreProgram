@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f6211b0-45d7-4e03-97a7-c0fc3ee0c9fa" name="변경" comment="1차 완성">
+    <list default="true" id="7f6211b0-45d7-4e03-97a7-c0fc3ee0c9fa" name="변경" comment="네이버 Java 코딩 컨벤션 적용">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ScoreProgram/BasicCredit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScoreProgram/BasicCredit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ScoreProgram/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScoreProgram/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ScoreProgram/MajorCredit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScoreProgram/MajorCredit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ScoreProgram/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScoreProgram/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ScoreProgram/Makecredit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScoreProgram/MakeCredit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ScoreProgram/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScoreProgram/Score.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ScoreProgram/ScoreTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScoreProgram/ScoreTable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +30,8 @@
         <option value="HTTP Request" />
         <option value="HTML File" />
         <option value="JUnit5 Test Class" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -132,7 +136,7 @@
       <workItem from="1665620986024" duration="16359000" />
       <workItem from="1665845378293" duration="11693000" />
       <workItem from="1665909846139" duration="43995000" />
-      <workItem from="1666161172973" duration="33721000" />
+      <workItem from="1666161172973" duration="42185000" />
     </task>
     <task id="LOCAL-00001" summary="스켈레톤 코드">
       <created>1666162876734</created>
@@ -155,7 +159,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666235913714</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="점수 리스트로 보이는 문제 해결">
+      <created>1666326652733</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666326652733</updated>
+    </task>
+    <task id="LOCAL-00005" summary="네이버 Java 코딩 컨벤션 적용">
+      <created>1666327026230</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666327026230</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +216,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="스켈레톤 코드" />
     <MESSAGE value="1차 완성" />
-    <option name="LAST_COMMIT_MESSAGE" value="1차 완성" />
+    <MESSAGE value="점수 리스트로 보이는 문제 해결" />
+    <MESSAGE value="네이버 Java 코딩 컨벤션 적용" />
+    <option name="LAST_COMMIT_MESSAGE" value="네이버 Java 코딩 컨벤션 적용" />
   </component>
 </project>
