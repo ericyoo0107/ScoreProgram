@@ -18,7 +18,7 @@ public class Main {
 
 		Subject korean = new Korean(1001);
 		Subject math = new Math(2001);
-		Subject mediaDance = new MediaDance(3001);
+		Subject mediaDance = new MediaDance(3001, "P/F과목");
 
 		InhaUniv.makeClass(korean);
 		InhaUniv.makeClass(math);

@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f6211b0-45d7-4e03-97a7-c0fc3ee0c9fa" name="변경" comment="방송댄스 과목 추가, P/F 학점제도 추가, 전공학점과 교양학점이 바뀌어 나왔던것 추가">
+    <list default="true" id="7f6211b0-45d7-4e03-97a7-c0fc3ee0c9fa" name="변경" comment="학교를 싱글톤 패턴으로 구현함">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ScoreProgram/Korean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScoreProgram/Korean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ScoreProgram/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScoreProgram/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ScoreProgram/School.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScoreProgram/School.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ScoreProgram/Math.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScoreProgram/Math.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ScoreProgram/MediaDance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScoreProgram/MediaDance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ScoreProgram/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScoreProgram/Score.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ScoreProgram/Subject.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +30,8 @@
         <option value="HTTP Request" />
         <option value="HTML File" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -58,38 +62,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "C:/Users/USER/IdeaProjects/java_practice/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "프로젝트",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.appearance"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/USER/IdeaProjects/java_practice/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;프로젝트&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.appearance&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
     ],
-    "DatabaseDriversLRU": [
-      "mongo"
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mongo&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\USER\IdeaProjects\java_practice" />
@@ -132,7 +136,8 @@
       <workItem from="1665620986024" duration="16359000" />
       <workItem from="1665845378293" duration="11693000" />
       <workItem from="1665909846139" duration="43995000" />
-      <workItem from="1666161172973" duration="43000000" />
+      <workItem from="1666161172973" duration="43372000" />
+      <workItem from="1666357992891" duration="2336000" />
     </task>
     <task id="LOCAL-00001" summary="스켈레톤 코드">
       <created>1666162876734</created>
@@ -183,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666345117609</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="학교를 싱글톤 패턴으로 구현함">
+      <created>1666345899477</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666345899477</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +241,7 @@
     <MESSAGE value="점수 리스트로 보이는 문제 해결" />
     <MESSAGE value="네이버 Java 코딩 컨벤션 적용" />
     <MESSAGE value="방송댄스 과목 추가, P/F 학점제도 추가, 전공학점과 교양학점이 바뀌어 나왔던것 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="방송댄스 과목 추가, P/F 학점제도 추가, 전공학점과 교양학점이 바뀌어 나왔던것 추가" />
+    <MESSAGE value="학교를 싱글톤 패턴으로 구현함" />
+    <option name="LAST_COMMIT_MESSAGE" value="학교를 싱글톤 패턴으로 구현함" />
   </component>
 </project>

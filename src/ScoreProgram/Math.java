@@ -3,13 +3,20 @@ package ScoreProgram;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class Math implements Subject {
+public class Math extends Subject {
 	private int classID;
+
 	private ArrayList<Student> student = new ArrayList<Student>();
 
 	//과목 개설
 	public Math(int classID) {
 		this.classID = classID;
+		super.creditType = "일반과목";
+	}
+
+	public Math(int classID, String creditType) {
+		this.classID = classID;
+		super.creditType = creditType;
 	}
 
 	//학생 수강 신청
@@ -24,6 +31,10 @@ public class Math implements Subject {
 
 	public int getClassID() {
 		return classID;
+	}
+
+	public String getCreditType() {
+		return super.creditType;
 	}
 
 	@Override

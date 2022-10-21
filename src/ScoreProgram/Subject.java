@@ -1,8 +1,13 @@
 package ScoreProgram;
 
-import java.util.ArrayList;
+public abstract class Subject {
 
-public interface Subject {
-	public void sugangAdmit(Student student);
+	protected String creditType;
 
+	public void sugangAdmit(Student student) {
+	}
+
+	public String getCreditType() {
+		return creditType;
+	}
 }

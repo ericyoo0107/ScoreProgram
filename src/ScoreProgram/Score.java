@@ -14,23 +14,23 @@ public class Score implements BasicCredit, MajorCredit, PassFailCredit {
 	}
 
 	public char credit() {
-		if (creditTypeCheck() == 0)
+		if (creditTypeCheck())
 			return majorCredit(score);
-		else if(creditTypeCheck()==1)
-			return basicCredit(score);
-		else if (creditTypeCheck()== 2) {
-			return passFailCredit(score);
+		else {
+			if (subject.getCreditType().equals("일반과목"))
+				return basicCredit(score);
+			else if (subject.getCreditType().equals("P/F과목")) {
+				return passFailCredit(score);
+			}
 		}
 		return 0;
 	}
 
-	public int creditTypeCheck() {
+	public boolean creditTypeCheck() {
 		if (student.getMajor().equals("컴퓨터공학과") && subject instanceof Math
 			|| student.getMajor().equals("국어국문학과") && subject instanceof Korean)
-			return 0;
-		else if(subject instanceof MediaDance)
-			return 2;
-		return 1;
+			return true;
+		return false;
 	}
 
 	@Override
