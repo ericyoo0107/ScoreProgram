@@ -36,6 +36,7 @@ public class Student {
     {
         return StudentName + "|" + StudentNum + "|" + whatsMainSubject(this.major) + "|" + myScore.get(subjectCode);
     }
+
     @Override
     public String toString() {
         return StudentName + "|" + StudentNum + "|" + whatsMainSubject(this.major) + "|" + myScore;
